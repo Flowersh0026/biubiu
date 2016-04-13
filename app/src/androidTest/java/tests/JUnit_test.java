@@ -20,7 +20,8 @@ public class JUnit_test extends ActivityInstrumentationTestCase2<MainActivity> {
     public void test_first() {
         mainActivity = getActivity();
 
-        TextView textView = (TextView) mainActivity.findViewById(R.id.tv1);
+        TextView textView;
+        textView = (TextView) mainActivity.findViewById(R.id.tv1);
         String tester = textView.getText().toString();
 
         assertEquals("Hello World !",tester);
